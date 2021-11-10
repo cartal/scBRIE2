@@ -12,7 +12,7 @@ SAMPLES=/Users/ctl/github/scBRIE2/data/sample_list.txt
 
 ### Run mapping 
 
-for i in $(cat $SAMPLES)
+for i in $(awk '{ print $3}' $MANIFEST)
 
 do
 
