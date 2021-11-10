@@ -4,9 +4,9 @@
 
 ### Computer set up
 
-INDEX=/Volumes/TIGERII/nobackup/refseq/starindex/
-FASTA=/Volumes/TIGERII/nobackup/refseq/fasta/GRCm38.fasta
-GTF=/Volumes/TIGERII/nobackup/refseq/gtf/GRCm38.gtf
+INDEX=/Volumes/pinquisitor/experiments/data/ref_seq/GencodeM17
+FASTA=/Volumes/pinquisitor/experiments/data/ref_seq/GencodeM17/GRCm38.fasta
+GTF=/Volumes/pinquisitor/experiments/data/ref_seq/GencodeM17/GRCm38.gtf
 
 CPU=3
 
