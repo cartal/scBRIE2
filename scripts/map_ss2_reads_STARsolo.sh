@@ -5,10 +5,10 @@
 ### Set up 
 
 CPU=8
-INDEX=/Volumes/TIGERII/nobackup/refseq/starindex/
-READS=/Users/ctl/github/scBRIE2/data/
-MANIFEST=/Users/ctl/github/scBRIE2/data/manifest.tsv
-SAMPLES=/Users/ctl/github/scBRIE2/data/sample_list.txt
+INDEX=/home/hpc/martinez/genomes/mm10/STARsolo/Gencode_M17_index
+READS=/home/hpc/martinez/00_projects/mouse/snRNAseq2_polyploidy_isoforms/snRNAseq2
+MANIFEST=/home/hpc/martinez/00_projects/mouse/snRNAseq2_polyploidy_isoforms/snRNAseq2/manifest.tsv
+SAMPLES=/home/hpc/martinez/00_projects/mouse/snRNAseq2_polyploidy_isoforms/snRNAseq2/sample_list.txt
 
 ### Run mapping 
 
