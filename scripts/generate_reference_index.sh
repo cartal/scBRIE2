@@ -4,11 +4,11 @@
 
 ### Computer set up
 
-INDEX=/Volumes/TIGERII/nobackup/refseq/starindex
-FASTA=/Volumes/TIGERII/nobackup/refseq/fasta/GRCm38.fasta
-GTF=/Volumes/TIGERII/nobackup/refseq/gtf/GRCm38.gtf
+INDEX=/home/hpc/martinez/genomes/mm10/STARsolo/Gencode_M17_index/
+FASTA=/home/hpc/martinez/genomes/mm10/GENCODEm17/GRCm38.fasta
+GTF=/home/hpc/martinez/genomes/mm10/GENCODEm17/GRCm38.gtf
 
-CPU=3
+CPU=64
 
 ### Generate reference index
 
