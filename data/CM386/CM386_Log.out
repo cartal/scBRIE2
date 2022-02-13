@@ -1,0 +1,258 @@
+STAR version=2.7.9a
+STAR compilation time,server,dir=2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+##### Command Line:
+/home/hpc/monika.litvinukova/tools/STAR-2.7.9a/bin/Linux_x86_64_static//STAR --runThreadN 8 --genomeDir /project/genomics/Litvinukova/data/ref_seq/GencodeM17/ --readFilesIn pair_1.fastq pair_2.fastq --soloType SmartSeq --readFilesManifest sample_manifest.tsv --soloUMIdedup Exact --soloStrand Unstranded --outSAMtype BAM SortedByCoordinate --soloFeatures Gene GeneFull SJ --outFileNamePrefix CM386_
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 CM386_
+###### All USER parameters from Command Line:
+runThreadN                    8     ~RE-DEFINED
+genomeDir                     /project/genomics/Litvinukova/data/ref_seq/GencodeM17/     ~RE-DEFINED
+readFilesIn                   pair_1.fastq   pair_2.fastq        ~RE-DEFINED
+soloType                      SmartSeq     ~RE-DEFINED
+readFilesManifest             sample_manifest.tsv        ~RE-DEFINED
+soloUMIdedup                  Exact        ~RE-DEFINED
+soloStrand                    Unstranded     ~RE-DEFINED
+outSAMtype                    BAM   SortedByCoordinate        ~RE-DEFINED
+soloFeatures                  Gene   GeneFull   SJ        ~RE-DEFINED
+outFileNamePrefix             CM386_     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runThreadN                        8
+genomeDir                         /project/genomics/Litvinukova/data/ref_seq/GencodeM17/
+readFilesIn                       pair_1.fastq   pair_2.fastq   
+readFilesManifest                 sample_manifest.tsv   
+outFileNamePrefix                 CM386_
+outSAMtype                        BAM   SortedByCoordinate   
+soloType                          SmartSeq
+soloStrand                        Unstranded
+soloFeatures                      Gene   GeneFull   SJ   
+soloUMIdedup                      Exact   
+
+-------------------------------
+##### Final effective command line:
+/home/hpc/monika.litvinukova/tools/STAR-2.7.9a/bin/Linux_x86_64_static//STAR   --runThreadN 8   --genomeDir /project/genomics/Litvinukova/data/ref_seq/GencodeM17/   --readFilesIn pair_1.fastq   pair_2.fastq      --readFilesManifest sample_manifest.tsv      --outFileNamePrefix CM386_   --outSAMtype BAM   SortedByCoordinate      --soloType SmartSeq   --soloStrand Unstranded   --soloFeatures Gene   GeneFull   SJ      --soloUMIdedup Exact   
+----------------------------------------
+
+Reading input file names and read groups from readFileManifest sample_manifest.tsv
+pair_1.fastq	pair_2.fastq	ID:CM386	
+Number of fastq files for each mate = 1
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+Dec 08 10:41:02 ... Finished reading, sorting and deduplicating CB whitelist sequences.
+WARNING: --limitBAMsortRAM=0, will use genome size as RAM limit for BAM sorting
+Finished loading and checking parameters
+Reading genome generation parameters:
+### /home/hpc/monika.litvinukova/tools/STAR-2.7.9a/bin/Linux_x86_64_static//STAR   --runMode genomeGenerate      --runThreadN 8   --genomeDir /project/genomics/Litvinukova/data/ref_seq/GencodeM17/   --genomeFastaFiles /project/genomics/Litvinukova/data/ref_seq/GencodeM17/GRCm38.fasta      --sjdbGTFfile /project/genomics/Litvinukova/data/ref_seq/GencodeM17/GRCm38.gtf
+### GstrandBit=32
+versionGenome                 2.7.4a     ~RE-DEFINED
+genomeType                    Full     ~RE-DEFINED
+genomeFastaFiles              /project/genomics/Litvinukova/data/ref_seq/GencodeM17/GRCm38.fasta        ~RE-DEFINED
+genomeSAindexNbases           14     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeTransformType           None     ~RE-DEFINED
+genomeTransformVCF            -     ~RE-DEFINED
+sjdbOverhang                  100     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   /project/genomics/Litvinukova/data/ref_seq/GencodeM17/GRCm38.gtf     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               2797164239   22344542636        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 66
+1	chr1	195471971	0
+2	chr2	182113224	195559424
+3	chr3	160039680	377749504
+4	chr4	156508116	537919488
+5	chr5	151834684	694681600
+6	chr6	149736546	846725120
+7	chr7	145441459	996671488
+8	chr8	129401213	1142161408
+9	chr9	124595110	1271660544
+10	chr10	130694993	1396441088
+11	chr11	122082543	1527250944
+12	chr12	120129022	1649410048
+13	chr13	120421639	1769734144
+14	chr14	124902244	1890320384
+15	chr15	104043685	2015363072
+16	chr16	98207768	2119434240
+17	chr17	94987271	2217738240
+18	chr18	90702639	2312896512
+19	chr19	61431566	2403860480
+20	chrX	171031299	2465464320
+21	chrY	91744698	2636644352
+22	chrM	16299	2728394752
+23	GL456210.1	169725	2728656896
+24	GL456211.1	241735	2728919040
+25	GL456212.1	153618	2729181184
+26	GL456213.1	39340	2729443328
+27	GL456216.1	66673	2729705472
+28	GL456219.1	175968	2729967616
+29	GL456221.1	206961	2730229760
+30	GL456233.1	336933	2730491904
+31	GL456239.1	40056	2731016192
+32	GL456350.1	227966	2731278336
+33	GL456354.1	195993	2731540480
+34	GL456359.1	22974	2731802624
+35	GL456360.1	31704	2732064768
+36	GL456366.1	47073	2732326912
+37	GL456367.1	42057	2732589056
+38	GL456368.1	20208	2732851200
+39	GL456370.1	26764	2733113344
+40	GL456372.1	28664	2733375488
+41	GL456378.1	31602	2733637632
+42	GL456379.1	72385	2733899776
+43	GL456381.1	25871	2734161920
+44	GL456382.1	23158	2734424064
+45	GL456383.1	38659	2734686208
+46	GL456385.1	35240	2734948352
+47	GL456387.1	24685	2735210496
+48	GL456389.1	28772	2735472640
+49	GL456390.1	24668	2735734784
+50	GL456392.1	23629	2735996928
+51	GL456393.1	55711	2736259072
+52	GL456394.1	24323	2736521216
+53	GL456396.1	21240	2736783360
+54	JH584292.1	14945	2737045504
+55	JH584293.1	207968	2737307648
+56	JH584294.1	191905	2737569792
+57	JH584295.1	1976	2737831936
+58	JH584296.1	199368	2738094080
+59	JH584297.1	205776	2738356224
+60	JH584298.1	184189	2738618368
+61	JH584299.1	953012	2738880512
+62	JH584300.1	182347	2739929088
+63	JH584301.1	259875	2740191232
+64	JH584302.1	155838	2740453376
+65	JH584303.1	158099	2740715520
+66	JH584304.1	114452	2740977664
+--sjdbOverhang = 100 taken from the generated genome
+Started loading the genome: Wed Dec  8 10:41:02 2021
+
+Genome: size given as a parameter = 2797164239
+SA: size given as a parameter = 22344542636
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=14  nSAi=357913940
+nGenome=2797164239;  nSAbyte=22344542636
+GstrandBit=32   SA number of indices=5416858820
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 2797164239 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 2797164239 bytes
+SA file size: 22344542636 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 22344542636 bytes
+Loading SAindex ... done: 1565873619 bytes
+Finished loading the genome: Wed Dec  8 10:41:25 2021
+
+Processing splice junctions database sjdbN=278231,   pGe.sjdbOverhang=100 
+alignIntronMax=alignMatesGapMax=0, the max intron size will be approximately determined by (2^winBinNbits)*winAnchorDistNbins=589824
+Loaded transcript database, nTr=135181
+Loaded exon database, nEx=801313
+Created thread # 1
+Created thread # 2
+Created thread # 3
+Created thread # 4
+Created thread # 5
+Created thread # 6
+Created thread # 7
+Thread #0 end of input stream, nextChar=-1
+Completed: thread #7
+BAM sorting: 146 mapped reads
+BAM sorting bins genomic start loci:
+1	0	29899708
+2	0	118394988
+3	0	143465770
+4	1	7076203
+5	1	19432169
+6	1	111438887
+7	1	144268255
+8	2	5860356
+9	2	5860478
+10	2	35853405
+11	2	69029394
+12	2	79251761
+13	2	90182409
+14	2	95568458
+15	2	114762735
+16	2	120446644
+17	2	122016487
+18	3	46483167
+19	3	103852703
+20	4	6327007
+21	4	89439524
+22	5	39762054
+23	5	100655970
+24	5	100656065
+25	5	122247007
+26	5	149336657
+27	6	56207738
+28	6	56207763
+29	6	56207824
+30	6	56207954
+31	6	56207998
+32	6	78803587
+33	7	51986948
+34	8	78175422
+35	8	111018809
+36	9	43848695
+37	9	72297177
+38	10	17327225
+39	10	109011646
+40	11	32724876
+41	11	67405742
+42	11	94775398
+43	12	110687734
+44	13	25896568
+45	13	26036338
+46	13	26175952
+47	13	74550799
+48	14	26703812
+Completed: thread #0
+Completed: thread #3
+Completed: thread #4
+Completed: thread #2
+Completed: thread #6
+Completed: thread #5
+Completed: thread #1
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+Joined thread # 4
+Joined thread # 5
+Joined thread # 6
+Joined thread # 7
+Dec 08 10:42:09 ..... started Solo counting
+Dec 08 10:42:09 ... Starting Solo post-map for SJ
+     Redistributing reads into 24files; nReadRec=30;   nReadRecBin=1
+Dec 08 10:42:09 ... Finished redistribution of reads from Solo read files
+Dec 08 10:42:09 ... Finished reading / collapsing
+Dec 08 10:42:09 ... Finished SmartSeq counting
+Dec 08 10:42:09 ... Solo: writing raw matrix
+Solo output directory directory created: CM386_Solo.out/SJ//raw/
+Dec 08 10:42:09 ... Solo: cell filtering
+Dec 08 10:42:09 ... Starting Solo post-map for GeneFull
+     Redistributing reads into 24files; nReadRec=334;   nReadRecBin=13
+Dec 08 10:42:09 ... Finished redistribution of reads from Solo read files
+Dec 08 10:42:09 ... Finished reading / collapsing
+Dec 08 10:42:09 ... Finished SmartSeq counting
+Dec 08 10:42:09 ... Solo: writing raw matrix
+Solo output directory directory created: CM386_Solo.out/GeneFull//raw/
+Dec 08 10:42:09 ... Solo: cell filtering
+cellFiltering: simple: nUMImax=300; nUMImin=30; nCellsSimple=1
+Solo output directory directory created: CM386_Solo.out/GeneFull/filtered/
+Dec 08 10:42:09 ... Starting Solo post-map for Gene
+     Redistributing reads into 24files; nReadRec=62;   nReadRecBin=2
+Dec 08 10:42:09 ... Finished redistribution of reads from Solo read files
+Dec 08 10:42:09 ... Finished reading / collapsing
+Dec 08 10:42:09 ... Finished SmartSeq counting
+Dec 08 10:42:09 ... Solo: writing raw matrix
+Solo output directory directory created: CM386_Solo.out/Gene//raw/
+Dec 08 10:42:09 ... Solo: cell filtering
+cellFiltering: simple: nUMImax=61; nUMImin=6; nCellsSimple=1
+Solo output directory directory created: CM386_Solo.out/Gene/filtered/
+Dec 08 10:42:09 ..... finished Solo counting
+Dec 08 10:42:09 ..... started sorting BAM
+Max memory needed for sorting = 118916
+ALL DONE!
